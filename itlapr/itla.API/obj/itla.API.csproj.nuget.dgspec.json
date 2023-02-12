@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Projects\\itlapr\\itla.API\\itla.API.csproj": {}
+    "C:\\Projects\\System-Sals-Management-POS\\itlapr\\itla.API\\itla.API.csproj": {}
   },
   "projects": {
-    "C:\\Projects\\itlapr\\itla.API\\itla.API.csproj": {
+    "C:\\Projects\\System-Sals-Management-POS\\itlapr\\itla.API\\itla.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Projects\\itlapr\\itla.API\\itla.API.csproj",
+        "projectUniqueName": "C:\\Projects\\System-Sals-Management-POS\\itlapr\\itla.API\\itla.API.csproj",
         "projectName": "itla.API",
-        "projectPath": "C:\\Projects\\itlapr\\itla.API\\itla.API.csproj",
+        "projectPath": "C:\\Projects\\System-Sals-Management-POS\\itlapr\\itla.API\\itla.API.csproj",
         "packagesPath": "C:\\Users\\Alberto\\.nuget\\packages\\",
-        "outputPath": "C:\\Projects\\itlapr\\itla.API\\obj\\",
+        "outputPath": "C:\\Projects\\System-Sals-Management-POS\\itlapr\\itla.API\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

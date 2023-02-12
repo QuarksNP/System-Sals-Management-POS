@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "LcZ7jKHn04qR9CTQLSb7xHv5PIvDJ7nHOh8jtMWJiHTQaWtmTrbuU3A3e7D6qeNakKUohTOlxJrB6UHixNs+fg==",
+  "dgSpecHash": "XFste5/XKNZM3M4eHorGwR7sB+Namds+OIMMiOh+Jf631K9HoUzqOYkAZEmiAeDLSM7F0NfSvPz4g/AgIFEvUg==",
   "success": true,
-  "projectFilePath": "C:\\Projects\\itlapr\\itlapr.Test\\itlapr.Test.csproj",
+  "projectFilePath": "C:\\Projects\\System-Sals-Management-POS\\itlapr\\itlapr.Test\\itlapr.Test.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Alberto\\.nuget\\packages\\coverlet.collector\\3.1.2\\coverlet.collector.3.1.2.nupkg.sha512",
     "C:\\Users\\Alberto\\.nuget\\packages\\microsoft.codecoverage\\17.3.2\\microsoft.codecoverage.17.3.2.nupkg.sha512",

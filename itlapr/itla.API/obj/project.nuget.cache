@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "gG02OCQcifzM4qfpeM/7diqzu1MQbWjIcnAObJjjPYVw2tztpMmu6u1DEF/kz3Pfa4mlaYZCKOfP2RVckmc0lA==",
+  "dgSpecHash": "p6oauldCk8wP2E4a2YtLahZ6g3Wcr28bTDAilek4MCUjIdahqxj/g9a+yRSHjMtqnBTWnK23GeRuoDmbpuAbIQ==",
   "success": true,
-  "projectFilePath": "C:\\Projects\\itlapr\\itla.API\\itla.API.csproj",
+  "projectFilePath": "C:\\Projects\\System-Sals-Management-POS\\itlapr\\itla.API\\itla.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Alberto\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
     "C:\\Users\\Alberto\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",

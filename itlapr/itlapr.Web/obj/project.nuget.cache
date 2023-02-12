@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "RoTlgaJypWmILRBuupqKMDe3322k+QQKfS4ziuAVLW+bip8ZgYwsy7BpFyiB+kuc6BuZvVuqRzgVAfztNfrFHA==",
+  "dgSpecHash": "0v/A4RLORVR+9cTIg863oN0uw0vlCDUiqSBZWwvll8F+2G6OFSjX4UTwPFO1xwoL3vqafuF1i+H35d/gviyXYg==",
   "success": true,
-  "projectFilePath": "C:\\Projects\\itlapr\\itlapr.Web\\itlapr.Web.csproj",
+  "projectFilePath": "C:\\Projects\\System-Sals-Management-POS\\itlapr\\itlapr.Web\\itlapr.Web.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Alberto\\.nuget\\packages\\humanizer.core\\2.2.0\\humanizer.core.2.2.0.nupkg.sha512",
     "C:\\Users\\Alberto\\.nuget\\packages\\messagepack\\2.1.152\\messagepack.2.1.152.nupkg.sha512",

@@ -11,8 +11,8 @@
         public string? region { get; set; }
         public int postalCode { get; set; }
         public string? phone { get; set; }
-        public DateTime birthDate { get; set; }
-        public DateTime hireDate { get; set; }
+        public string? birthDate { get; set; }
+        public string? hireDate { get; set; }
 
     }
 }
