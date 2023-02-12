@@ -1,0 +1,112 @@
+﻿@model IEnumerable<itlapr.Web.Models.SalesModel>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Sales</h1>
+
+<p>
+    <a asp-action="Create">Crear</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.orderid)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.custid)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.empid)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.orderdate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.requireddate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.shipperid)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.shippeddate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.freight)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.shipname)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.shipadress)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.shipcity)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.shipregion)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.shipostalcode)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.shipconuntry)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.orderid)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.custid)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.empid)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.orderdate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.requireddate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.shipperid)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.shippeddate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.freight)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.shipname)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.shipadress)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.shipcity)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.shipregion)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.shipostalcode)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.shipconuntry)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+                @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ })
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
