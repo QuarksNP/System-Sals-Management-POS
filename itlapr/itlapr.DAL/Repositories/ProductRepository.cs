@@ -8,27 +8,26 @@ namespace itlapr.DAL.Repositories
 {
     public class ProductRepository : Interfaces.IProductRepository
     {
-        private readonly ItlaContext itlaContext;
+        private readonly ItlaContext ItlaContext;
         private readonly ILogger<ProductRepository> Logger;
-        public ProductRepository(ItlaContext itlaContext,
-                                 ILogger<ProductRepository> logger)
+        public ProductRepository(ItlaContext ItlaContext,ILogger<ProductRepository> logger)
         {
-            this.itlaContext = itlaContext;
+            this.ItlaContext = ItlaContext;
             this.Logger = logger;
         }
         public bool Exists(string name)
         {
-            return this.itlaContext.Products.any(st => st.Firtname == name);
+            return this.ItlaContext.products.Any(st => st.productname == name);
         }
 
         public List<Product> GetAl1()
         {
-            return this.itlaContext.Products.ToList();
+            return this.ItlaContext.products.ToList();
         }
 
         public Product GetById(int id)
         {
-            return this.itlaContext.Products.Find(ProductId);
+            return this.ItlaContext.products.Find();
         }
 
         public void Remove(Product product)
@@ -41,12 +40,12 @@ namespace itlapr.DAL.Repositories
                 productToRemove.DeletedDate = DateTime.Now;
                 productToRemove.UserDeleted = product.UserDeleted;
 
-                this.itlaContext.Products.update(productToRemove);
-                this.itlaContext.SaveChanges();
+                this.ItlaContext.products.Update(productToRemove);
+                this.ItlaContext.SaveChanges();
             }
             catch (Exception ex)
             {
-                this.Logger.logError($"Error removiendo el producto", ex ToString());
+                this.Logger.logError($"Error removiendo el Producto", ex.ToString());
             }
         }
 
@@ -54,20 +53,20 @@ namespace itlapr.DAL.Repositories
         {
             try
             {
-                Product productToAdd = new Product();
+                Product productToAdd = new Product()
                 {
-                    FirsName = product.FirtName,
-                    LastName = product.Lastname,
-                    CreationDate = DataTime.now,
-                    CreationUser = product.DataTime.Now,
-                        EnrollmentDate = product.EnrollmentDate
+                   productname = product.productname,
+                   categoryname = product.categoryname,
+                   CreationDate =product.CreationDate,
+                   CreationUser = product.CreationUser,
+                   Description = product.Description,
                 };
-                this.itlaContext.Products.Add(productToAdd);
-                this.itlaContext.SaveChanges();
+                this.ItlaContext.products.Add(productToAdd);
+                this.ItlaContext.SaveChanges();
             }
             catch (Exception ex)
             {
-                this.Logger.logError($"Error removiendo el producto", ex ToString());
+                this.Logger.logError($"Error removiendo el Producto", ex.ToString());
             }
         }
 
@@ -75,15 +74,8 @@ namespace itlapr.DAL.Repositories
         {
             try
             {
-                Product productToUpdate = this.GetById(product.ProductId);
-
-                productToUpdate.FirsName = product.FirtName,
-                        productToUpdate.LastName = product.Lastname,
-                         productToUpdate.EnrollmentDate = product.EnrollmentDate
-                        productToUpdate.ModifyDate = DataTime.Now;
-                productToUpdate.UserMod = product.UserMod.Now;
-
-                this.itlaContext.SaveChanges();
+        
+                this.ItlaContext.SaveChanges();
             }
             catch (Exception ex)
             {

@@ -6,7 +6,7 @@ namespace itlapr.DAL.Context
     public class ItlaContext : DbContext
     {
         #region"Registros"
-        public DbSet<Product> Products { get; set; }
+        public DbSet<Product> products{ get; set; }
         #endregion""
     }
 }

@@ -1,7 +1,8 @@
 ﻿namespace itlapr.DAL.Repositories
 {
-    internal interface ILogger<T>
+    public interface ILogger<T>
     {
         void logError(string v1, Exception ex, string? v2);
+        void logError(string v1, string v2);
     }
 }
