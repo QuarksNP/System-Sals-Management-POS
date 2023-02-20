@@ -1,0 +1,10 @@
+C:\Users\franc\source\repos\System-Sals-Management-POS\itlapr\itla.DAL\obj\Debug\netcoreapp3.1\itla.DAL.csproj.AssemblyReference.cache
+C:\Users\franc\source\repos\System-Sals-Management-POS\itlapr\itla.DAL\obj\Debug\netcoreapp3.1\itla.DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\franc\source\repos\System-Sals-Management-POS\itlapr\itla.DAL\obj\Debug\netcoreapp3.1\itla.DAL.AssemblyInfoInputs.cache
+C:\Users\franc\source\repos\System-Sals-Management-POS\itlapr\itla.DAL\obj\Debug\netcoreapp3.1\itla.DAL.AssemblyInfo.cs
+C:\Users\franc\source\repos\System-Sals-Management-POS\itlapr\itla.DAL\obj\Debug\netcoreapp3.1\itla.DAL.csproj.CoreCompileInputs.cache
+C:\Users\franc\source\repos\System-Sals-Management-POS\itlapr\itla.DAL\bin\Debug\netcoreapp3.1\itla.DAL.deps.json
+C:\Users\franc\source\repos\System-Sals-Management-POS\itlapr\itla.DAL\bin\Debug\netcoreapp3.1\itla.DAL.dll
+C:\Users\franc\source\repos\System-Sals-Management-POS\itlapr\itla.DAL\bin\Debug\netcoreapp3.1\itla.DAL.pdb
+C:\Users\franc\source\repos\System-Sals-Management-POS\itlapr\itla.DAL\obj\Debug\netcoreapp3.1\itla.DAL.dll
+C:\Users\franc\source\repos\System-Sals-Management-POS\itlapr\itla.DAL\obj\Debug\netcoreapp3.1\itla.DAL.pdb
