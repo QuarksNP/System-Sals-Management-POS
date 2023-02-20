@@ -67,6 +67,7 @@ namespace itlapr.DAL.Repositories
             catch (Exception ex)
             {
                 this.Logger.logError($"Error removiendo el Producto", ex.ToString());
+                throw;
             }
         }
 
@@ -74,12 +75,18 @@ namespace itlapr.DAL.Repositories
         {
             try
             {
+                Product productToUpdate = this.GetById(product.ProductId);
+                productToUpdate.productname = product.productname;
+                productToUpdate.categoryname = product.categoryname;
+                productToUpdate.CreationDate = DateTime.Now;
+                productToUpdate.CreationUser = product.CreationUser;
+                productToUpdate.Description = product.Description;
 
                 this.ItlaContext.SaveChanges();
             }
             catch (Exception ex)
             {
-
+                this.Logger.logError($"Error removiendo el producto", ex.ToString());
             }
 
         }
