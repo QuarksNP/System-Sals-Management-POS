@@ -3,25 +3,25 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33122.133
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "itlapr.DAL", "itlapr.DAL\itlapr.DAL.csproj", "{A8A8D3D3-C083-4935-9953-01D7598A9B57}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "itlapr.DAL", "itlapr.DAL\itlapr.DAL.csproj", "{A8A8D3D3-C083-4935-9953-01D7598A9B57}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DAL", "DAL", "{4A96CFA4-35E2-4DA4-B752-6F014CC2A7C7}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BLL", "BLL", "{A410C7A1-84BD-4811-B1D1-7B7EC05FEF00}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "itlapr.BLL", "itlapr.BLL\itlapr.BLL.csproj", "{6DB485F1-03A9-4B54-BE5C-DB4F9D718FAC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "itlapr.BLL", "itlapr.BLL\itlapr.BLL.csproj", "{6DB485F1-03A9-4B54-BE5C-DB4F9D718FAC}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "API", "API", "{B06C12A4-EFC0-4B99-83DA-ADA6B65B80F6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "itla.API", "itla.API\itla.API.csproj", "{FF525806-27C1-4F1E-A98B-020417E2C036}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "itla.API", "itla.API\itla.API.csproj", "{FF525806-27C1-4F1E-A98B-020417E2C036}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PRE", "PRE", "{34758DF8-008F-45DE-9996-A2AEF38324F4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "itlapr.Web", "itlapr.Web\itlapr.Web.csproj", "{8E9E2188-655B-4918-AF34-7A211B5E36FE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "itlapr.Web", "itlapr.Web\itlapr.Web.csproj", "{8E9E2188-655B-4918-AF34-7A211B5E36FE}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TEST", "TEST", "{D2EF7F59-4114-4D73-92C5-66659D5191E8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "itlapr.Test", "itlapr.Test\itlapr.Test.csproj", "{5A248420-5008-4ECA-B4FF-1D1DB295621F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "itlapr.Test", "itlapr.Test\itlapr.Test.csproj", "{5A248420-5008-4ECA-B4FF-1D1DB295621F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
