@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Projects\\itlapr\\itlapr.Web\\itlapr.Web.csproj",
+      "projectUniqueName": "C:\\Project\\itlapr\\itlapr.Web\\itlapr.Web.csproj",
       "projectName": "itlapr.Web",
-      "projectPath": "C:\\Projects\\itlapr\\itlapr.Web\\itlapr.Web.csproj",
+      "projectPath": "C:\\Project\\itlapr\\itlapr.Web\\itlapr.Web.csproj",
       "packagesPath": "C:\\Users\\misae\\.nuget\\packages\\",
-      "outputPath": "C:\\Projects\\itlapr\\itlapr.Web\\obj\\",
+      "outputPath": "C:\\Project\\itlapr\\itlapr.Web\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\misae\\AppData\\Roaming\\NuGet\\NuGet.Config",

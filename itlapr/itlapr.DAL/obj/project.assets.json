@@ -5881,11 +5881,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Projects\\itlapr\\itlapr.DAL\\itlapr.DAL.csproj",
+      "projectUniqueName": "C:\\Project\\itlapr\\itlapr.DAL\\itlapr.DAL.csproj",
       "projectName": "itlapr.DAL",
-      "projectPath": "C:\\Projects\\itlapr\\itlapr.DAL\\itlapr.DAL.csproj",
+      "projectPath": "C:\\Project\\itlapr\\itlapr.DAL\\itlapr.DAL.csproj",
       "packagesPath": "C:\\Users\\misae\\.nuget\\packages\\",
-      "outputPath": "C:\\Projects\\itlapr\\itlapr.DAL\\obj\\",
+      "outputPath": "C:\\Project\\itlapr\\itlapr.DAL\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\misae\\AppData\\Roaming\\NuGet\\NuGet.Config",

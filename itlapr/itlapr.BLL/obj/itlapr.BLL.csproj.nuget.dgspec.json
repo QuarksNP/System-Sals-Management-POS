@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Projects\\itlapr\\itlapr.BLL\\itlapr.BLL.csproj": {}
+    "C:\\Project\\itlapr\\itlapr.BLL\\itlapr.BLL.csproj": {}
   },
   "projects": {
-    "C:\\Projects\\itlapr\\itlapr.BLL\\itlapr.BLL.csproj": {
+    "C:\\Project\\itlapr\\itlapr.BLL\\itlapr.BLL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Projects\\itlapr\\itlapr.BLL\\itlapr.BLL.csproj",
+        "projectUniqueName": "C:\\Project\\itlapr\\itlapr.BLL\\itlapr.BLL.csproj",
         "projectName": "itlapr.BLL",
-        "projectPath": "C:\\Projects\\itlapr\\itlapr.BLL\\itlapr.BLL.csproj",
+        "projectPath": "C:\\Project\\itlapr\\itlapr.BLL\\itlapr.BLL.csproj",
         "packagesPath": "C:\\Users\\misae\\.nuget\\packages\\",
-        "outputPath": "C:\\Projects\\itlapr\\itlapr.BLL\\obj\\",
+        "outputPath": "C:\\Project\\itlapr\\itlapr.BLL\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\misae\\AppData\\Roaming\\NuGet\\NuGet.Config",

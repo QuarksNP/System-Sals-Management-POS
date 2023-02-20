@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "qkaFEGVJqWY+8Oxz0CQeDVlo4qinQ1pqlUUctwt72uzuZVztYVN2+NnoThDQfCfdXpH8fSwkLI+QJPf37aGJLA==",
+  "dgSpecHash": "pOMWOmAV0fgjzp4pAFvHj9vNRYFGVO4KWpuJpkE17VYmDnaB6jXdb+AUqFkDqCDtKKNXZNNzxGv5B4gQ4R1rOw==",
   "success": true,
-  "projectFilePath": "C:\\Projects\\itlapr\\itlapr.Web\\itlapr.Web.csproj",
+  "projectFilePath": "C:\\Project\\itlapr\\itlapr.Web\\itlapr.Web.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
