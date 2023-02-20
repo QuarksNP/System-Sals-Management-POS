@@ -1,7 +1,4 @@
-﻿using itlapr.DAL.Entities;
-using itlapr.DAL.Interfaces;
-using itlapr.DAL.Repository;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
@@ -12,40 +9,36 @@ namespace itla.API.Controllers
     [ApiController]
     public class SalesOrdersController : ControllerBase
     {
-        private readonly ISalesOrdersRepository salesOrdersRepository;
-
-        public SalesOrdersController(ISalesOrdersRepository salesOrdersRepository)
-        {
-            this.salesOrdersRepository = salesOrdersRepository;
-        }
-
+        // GET: api/<SalesOrdersController>
         [HttpGet]
-        public IEnumerable<SalesOrders> Get()
+        public IEnumerable<string> Get()
         {
-            return this.salesOrdersRepository.GetAll();
+            return new string[] { "value1", "value2" };
         }
 
-        public SalesOrders Get(int id)
+        // GET api/<SalesOrdersController>/5
+        [HttpGet("{id}")]
+        public string Get(int id)
         {
-            return this.salesOrdersRepository.GetById(id);
+            return "value";
         }
 
+        // POST api/<SalesOrdersController>
         [HttpPost]
-        public void Post([FromBody] SalesOrders salesOrders)
+        public void Post([FromBody] string value)
         {
-            this.salesOrdersRepository.Save(salesOrders);
         }
 
-        [HttpPost]
-        public void Put(SalesOrders salesOrders)
+        // PUT api/<SalesOrdersController>/5
+        [HttpPut("{id}")]
+        public void Put(int id, [FromBody] string value)
         {
-            this.salesOrdersRepository.Update(salesOrders);
         }
 
-        [HttpPost]
-        public void Delete(SalesOrders salesOrders)
+        // DELETE api/<SalesOrdersController>/5
+        [HttpDelete("{id}")]
+        public void Delete(int id)
         {
-            this.salesOrdersRepository.Remove(salesOrders);
         }
     }
 }
