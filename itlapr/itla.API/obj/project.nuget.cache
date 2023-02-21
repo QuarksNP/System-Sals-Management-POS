@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "tmZgYz7pOW9aotzj9J0RjcXA4dP5MOkajacFRbl0M1O4oFXFD3dzZLOXFUcrgrYwczukyKd/ruBhfBBuKtllSg==",
+  "dgSpecHash": "RgF2Ncf0Htb6ALC+Jfn3cG6cL5zOXTsLnY+eflZwJIStTWvSssnTij46Iu3dR10NBukEUAgvIjrtsQDSVnXIsw==",
   "success": true,
   "projectFilePath": "C:\\Project\\itlapr\\itla.API\\itla.API.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\misae\\.nuget\\packages\\documentformat.openxml\\2.19.0\\documentformat.openxml.2.19.0.nupkg.sha512",
     "C:\\Users\\misae\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\misae\\.nuget\\packages\\microsoft.bcl.hashcode\\1.1.1\\microsoft.bcl.hashcode.1.1.1.nupkg.sha512",
     "C:\\Users\\misae\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
@@ -66,6 +67,7 @@
     "C:\\Users\\misae\\.nuget\\packages\\system.io\\4.3.0\\system.io.4.3.0.nupkg.sha512",
     "C:\\Users\\misae\\.nuget\\packages\\system.io.filesystem\\4.3.0\\system.io.filesystem.4.3.0.nupkg.sha512",
     "C:\\Users\\misae\\.nuget\\packages\\system.io.filesystem.primitives\\4.3.0\\system.io.filesystem.primitives.4.3.0.nupkg.sha512",
+    "C:\\Users\\misae\\.nuget\\packages\\system.io.packaging\\4.7.0\\system.io.packaging.4.7.0.nupkg.sha512",
     "C:\\Users\\misae\\.nuget\\packages\\system.linq\\4.3.0\\system.linq.4.3.0.nupkg.sha512",
     "C:\\Users\\misae\\.nuget\\packages\\system.linq.expressions\\4.3.0\\system.linq.expressions.4.3.0.nupkg.sha512",
     "C:\\Users\\misae\\.nuget\\packages\\system.net.nameresolution\\4.3.0\\system.net.nameresolution.4.3.0.nupkg.sha512",

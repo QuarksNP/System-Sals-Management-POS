@@ -1,4 +1,7 @@
-﻿using itlapr.DAL.Entities;
+﻿using DocumentFormat.OpenXml.Bibliography;
+using itla.API.Requests;
+using itlapr.DAL.Core;
+using itlapr.DAL.Entities;
 using itlapr.DAL.Interfaces;
 using Microsoft.AspNetCore.Mvc;
     
@@ -17,14 +20,13 @@ namespace ItlaApp.Api.Controllers
         {
             this.productRepository = productRepository;
         }
-        // GET: api/<ProductController>
+
         [HttpGet()]
         public IEnumerable<Product> Get()
         {
-           return this.productRepository.GetAl1();
+            return this.productRepository.GetAl1();
         }
 
-        // GET api/<ProductController>/5
         [HttpGet("{id}")]
         public IActionResult Get(int id)
         {
@@ -33,21 +35,44 @@ namespace ItlaApp.Api.Controllers
         }
 
         [HttpPost("Save")]
-        public void Post([FromBody] Product product)
+        public void Post([FromBody] ProductAddRequest productAdd)
         {
+            Product product = new Product();
+            {
+                string ProductName = productAdd.ProductName,
+                       Description = productAdd.Description;
+                int    CreateUser = productAdd.CreateUser;
+                DateTime CreateDate = productAdd.CreateDate;
+
+
+            };
             this.productRepository.Save(product);
         }
 
 
         [HttpPost("Update")]
-        public void Put( Product product)
+        public void Put([FromBody] ProductUpdateRequest productUpdate)
         {
+            Product product = new Product();
+            {
+                int ProductId = productUpdate.ProductId;
+                string ProductName = productUpdate.ProductName, 
+                       Category = productUpdate.Category;
+
+            }
             this.productRepository.Update(product);
         }
 
         [HttpPost("Remove")]
-        public void Remove(Product product)
+        public void Remove([FromBody]ProductRemoveRequest productRemove)
         {
+            Product product = new Product();
+            {
+                int ProductId = productRemove.ProductId;
+                string ProductName = productRemove.ProductName,
+                 Description = productRemove.Description,
+                 Category = productRemove.Category;
+            }
             this.productRepository.Remove(product);
         }
     }

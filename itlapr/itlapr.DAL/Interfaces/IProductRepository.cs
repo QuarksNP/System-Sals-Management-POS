@@ -18,6 +18,7 @@ namespace itlapr.DAL.Interfaces
         List<Product> GetAl1();
 
         bool Exists(string name);
+        void Remove(object product);
     }
 }
 

@@ -4,6 +4,7 @@ using itlapr.DAL.Context;
 using System.Linq;
 using itlapr.DAL.Core;
 
+
 namespace itlapr.DAL.Repositories
 {
     public class ProductRepository : Interfaces.IProductRepository
@@ -22,7 +23,8 @@ namespace itlapr.DAL.Repositories
 
         public List<Product> GetAl1()
         {
-            return this.ItlaContext.Products.ToList();
+            return this.ItlaContext.Products
+                        .Where(dep => !dep.Deleted).ToList();
         }
 
         public Product GetById(int id)
@@ -49,6 +51,11 @@ namespace itlapr.DAL.Repositories
             }
         }
 
+        public void Remove(object product)
+        {
+            throw new NotImplementedException();
+        }
+
         public void Save(Product product)
         {
             try
@@ -66,7 +73,7 @@ namespace itlapr.DAL.Repositories
             }
             catch (Exception ex)
             {
-                this.Logger.logError($"Error removiendo el Producto", ex.ToString());
+                this.Logger.logError($"Error agregando el Producto", ex.ToString());
                 throw;
             }
         }
@@ -86,7 +93,7 @@ namespace itlapr.DAL.Repositories
             }
             catch (Exception ex)
             {
-                this.Logger.logError($"Error removiendo el producto", ex.ToString());
+                this.Logger.logError($"Error actualizando el producto", ex.ToString());
             }
 
         }

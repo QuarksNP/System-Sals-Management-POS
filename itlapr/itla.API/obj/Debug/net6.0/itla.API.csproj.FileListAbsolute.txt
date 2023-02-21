@@ -59,3 +59,5 @@ C:\Project\itlapr\itla.API\obj\Debug\net6.0\refint\itla.API.dll
 C:\Project\itlapr\itla.API\obj\Debug\net6.0\itla.API.pdb
 C:\Project\itlapr\itla.API\obj\Debug\net6.0\itla.API.genruntimeconfig.cache
 C:\Project\itlapr\itla.API\obj\Debug\net6.0\ref\itla.API.dll
+C:\Project\itlapr\itla.API\bin\Debug\net6.0\DocumentFormat.OpenXml.dll
+C:\Project\itlapr\itla.API\bin\Debug\net6.0\System.IO.Packaging.dll
