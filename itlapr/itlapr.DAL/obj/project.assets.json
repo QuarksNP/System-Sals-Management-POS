@@ -5882,11 +5882,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Projecto\\System-Sals-Management-POS\\itlapr\\itlapr.DAL\\itlapr.DAL.csproj",
+      "projectUniqueName": "C:\\Users\\technology\\Documents\\todo\\Capa de Datos\\itlapr\\itlapr.DAL\\itlapr.DAL.csproj",
       "projectName": "itlapr.DAL",
-      "projectPath": "C:\\Projecto\\System-Sals-Management-POS\\itlapr\\itlapr.DAL\\itlapr.DAL.csproj",
+      "projectPath": "C:\\Users\\technology\\Documents\\todo\\Capa de Datos\\itlapr\\itlapr.DAL\\itlapr.DAL.csproj",
       "packagesPath": "C:\\Users\\technology\\.nuget\\packages\\",
-      "outputPath": "C:\\Projecto\\System-Sals-Management-POS\\itlapr\\itlapr.DAL\\obj\\",
+      "outputPath": "C:\\Users\\technology\\Documents\\todo\\Capa de Datos\\itlapr\\itlapr.DAL\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

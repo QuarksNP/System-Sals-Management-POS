@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Projecto\\System-Sals-Management-POS\\itlapr\\itlapr.BLL\\itlapr.BLL.csproj": {}
+    "C:\\Users\\technology\\Documents\\todo\\Capa de Datos\\itlapr\\itlapr.BLL\\itlapr.BLL.csproj": {}
   },
   "projects": {
-    "C:\\Projecto\\System-Sals-Management-POS\\itlapr\\itlapr.BLL\\itlapr.BLL.csproj": {
+    "C:\\Users\\technology\\Documents\\todo\\Capa de Datos\\itlapr\\itlapr.BLL\\itlapr.BLL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Projecto\\System-Sals-Management-POS\\itlapr\\itlapr.BLL\\itlapr.BLL.csproj",
+        "projectUniqueName": "C:\\Users\\technology\\Documents\\todo\\Capa de Datos\\itlapr\\itlapr.BLL\\itlapr.BLL.csproj",
         "projectName": "itlapr.BLL",
-        "projectPath": "C:\\Projecto\\System-Sals-Management-POS\\itlapr\\itlapr.BLL\\itlapr.BLL.csproj",
+        "projectPath": "C:\\Users\\technology\\Documents\\todo\\Capa de Datos\\itlapr\\itlapr.BLL\\itlapr.BLL.csproj",
         "packagesPath": "C:\\Users\\technology\\.nuget\\packages\\",
-        "outputPath": "C:\\Projecto\\System-Sals-Management-POS\\itlapr\\itlapr.BLL\\obj\\",
+        "outputPath": "C:\\Users\\technology\\Documents\\todo\\Capa de Datos\\itlapr\\itlapr.BLL\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

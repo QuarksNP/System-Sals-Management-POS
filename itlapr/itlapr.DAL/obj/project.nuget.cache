@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "RjeDBNxW5arOnKpmagjCAPrIRvLCUZD2O0VCWHKdQy671u7uKON5xQz8vRu/imnX76y8s9BShiud6NiaF9+m5Q==",
+  "dgSpecHash": "/OSNX5ARRmQG+yoebh3BA3gbijFy2hbe/0o0GUZw7KE3KlvcxzGN/I+h9rfD8xhT9dWTdIXgSpNLGdg6mn+0uQ==",
   "success": true,
-  "projectFilePath": "C:\\Projecto\\System-Sals-Management-POS\\itlapr\\itlapr.DAL\\itlapr.DAL.csproj",
+  "projectFilePath": "C:\\Users\\technology\\Documents\\todo\\Capa de Datos\\itlapr\\itlapr.DAL\\itlapr.DAL.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\technology\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\technology\\.nuget\\packages\\microsoft.bcl.hashcode\\1.1.1\\microsoft.bcl.hashcode.1.1.1.nupkg.sha512",
