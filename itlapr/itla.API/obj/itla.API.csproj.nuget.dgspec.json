@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\technology\\Documents\\todo\\Capa de Datos\\itlapr\\itla.API\\itla.API.csproj": {}
+    "C:\\Users\\technology\\Documents\\francis tarea\\itlapr\\itla.API\\itla.API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\technology\\Documents\\todo\\Capa de Datos\\itlapr\\itla.API\\itla.API.csproj": {
+    "C:\\Users\\technology\\Documents\\francis tarea\\itlapr\\itla.API\\itla.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\technology\\Documents\\todo\\Capa de Datos\\itlapr\\itla.API\\itla.API.csproj",
+        "projectUniqueName": "C:\\Users\\technology\\Documents\\francis tarea\\itlapr\\itla.API\\itla.API.csproj",
         "projectName": "itla.API",
-        "projectPath": "C:\\Users\\technology\\Documents\\todo\\Capa de Datos\\itlapr\\itla.API\\itla.API.csproj",
+        "projectPath": "C:\\Users\\technology\\Documents\\francis tarea\\itlapr\\itla.API\\itla.API.csproj",
         "packagesPath": "C:\\Users\\technology\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\technology\\Documents\\todo\\Capa de Datos\\itlapr\\itla.API\\obj\\",
+        "outputPath": "C:\\Users\\technology\\Documents\\francis tarea\\itlapr\\itla.API\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -68,7 +68,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     }

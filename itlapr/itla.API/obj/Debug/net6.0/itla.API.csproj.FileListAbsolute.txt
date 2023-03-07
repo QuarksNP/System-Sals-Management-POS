@@ -30,3 +30,35 @@ C:\Users\technology\Documents\todo\Capa de Datos\itlapr\itla.API\obj\Debug\net6.
 C:\Users\technology\Documents\todo\Capa de Datos\itlapr\itla.API\obj\Debug\net6.0\itla.API.pdb
 C:\Users\technology\Documents\todo\Capa de Datos\itlapr\itla.API\obj\Debug\net6.0\itla.API.genruntimeconfig.cache
 C:\Users\technology\Documents\todo\Capa de Datos\itlapr\itla.API\obj\Debug\net6.0\ref\itla.API.dll
+C:\Users\technology\Documents\francis tarea\itlapr\itla.API\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\technology\Documents\francis tarea\itlapr\itla.API\bin\Debug\net6.0\appsettings.json
+C:\Users\technology\Documents\francis tarea\itlapr\itla.API\bin\Debug\net6.0\itla.API.exe
+C:\Users\technology\Documents\francis tarea\itlapr\itla.API\bin\Debug\net6.0\itla.API.deps.json
+C:\Users\technology\Documents\francis tarea\itlapr\itla.API\bin\Debug\net6.0\itla.API.runtimeconfig.json
+C:\Users\technology\Documents\francis tarea\itlapr\itla.API\bin\Debug\net6.0\itla.API.dll
+C:\Users\technology\Documents\francis tarea\itlapr\itla.API\bin\Debug\net6.0\itla.API.pdb
+C:\Users\technology\Documents\francis tarea\itlapr\itla.API\bin\Debug\net6.0\Microsoft.OpenApi.dll
+C:\Users\technology\Documents\francis tarea\itlapr\itla.API\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\technology\Documents\francis tarea\itlapr\itla.API\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\technology\Documents\francis tarea\itlapr\itla.API\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\technology\Documents\francis tarea\itlapr\itla.API\obj\Debug\net6.0\itla.API.csproj.AssemblyReference.cache
+C:\Users\technology\Documents\francis tarea\itlapr\itla.API\obj\Debug\net6.0\itla.API.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\technology\Documents\francis tarea\itlapr\itla.API\obj\Debug\net6.0\itla.API.AssemblyInfoInputs.cache
+C:\Users\technology\Documents\francis tarea\itlapr\itla.API\obj\Debug\net6.0\itla.API.AssemblyInfo.cs
+C:\Users\technology\Documents\francis tarea\itlapr\itla.API\obj\Debug\net6.0\itla.API.csproj.CoreCompileInputs.cache
+C:\Users\technology\Documents\francis tarea\itlapr\itla.API\obj\Debug\net6.0\itla.API.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\technology\Documents\francis tarea\itlapr\itla.API\obj\Debug\net6.0\itla.API.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\technology\Documents\francis tarea\itlapr\itla.API\obj\Debug\net6.0\staticwebassets\msbuild.itla.API.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\technology\Documents\francis tarea\itlapr\itla.API\obj\Debug\net6.0\staticwebassets\msbuild.build.itla.API.props
+C:\Users\technology\Documents\francis tarea\itlapr\itla.API\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.itla.API.props
+C:\Users\technology\Documents\francis tarea\itlapr\itla.API\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.itla.API.props
+C:\Users\technology\Documents\francis tarea\itlapr\itla.API\obj\Debug\net6.0\staticwebassets.pack.json
+C:\Users\technology\Documents\francis tarea\itlapr\itla.API\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\technology\Documents\francis tarea\itlapr\itla.API\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\technology\Documents\francis tarea\itlapr\itla.API\obj\Debug\net6.0\scopedcss\bundle\itla.API.styles.css
+C:\Users\technology\Documents\francis tarea\itlapr\itla.API\obj\Debug\net6.0\itla.API.csproj.CopyComplete
+C:\Users\technology\Documents\francis tarea\itlapr\itla.API\obj\Debug\net6.0\itla.API.dll
+C:\Users\technology\Documents\francis tarea\itlapr\itla.API\obj\Debug\net6.0\refint\itla.API.dll
+C:\Users\technology\Documents\francis tarea\itlapr\itla.API\obj\Debug\net6.0\itla.API.pdb
+C:\Users\technology\Documents\francis tarea\itlapr\itla.API\obj\Debug\net6.0\itla.API.genruntimeconfig.cache
+C:\Users\technology\Documents\francis tarea\itlapr\itla.API\obj\Debug\net6.0\ref\itla.API.dll
