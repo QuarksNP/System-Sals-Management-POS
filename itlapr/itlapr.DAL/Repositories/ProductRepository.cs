@@ -1,101 +1,27 @@
-﻿using System.Collections.Generic;
+﻿using itlapr.DAL.Context;
 using itlapr.DAL.Entities;
-using itlapr.DAL.Context;
-using System.Linq;
-using itlapr.DAL.Core;
+using itlapr.DAL.Interfaces;    
+using Microsoft.Extensions.Logging;
 
-
-namespace itlapr.DAL.Repositories
+namespace itlathApp.DAL.Repositories
 {
-    public class ProductRepository : Interfaces.IProductRepository
+    public class ProductRepository : Core.RepositoryBase<Product>, IProductRepository
     {
-        private readonly ItlaContext ItlaContext;
-        private readonly ILogger<ProductRepository> Logger;
-        public ProductRepository(ItlaContext ItlaContext, ILogger<ProductRepository> logger)
-        {
-            this.ItlaContext = ItlaContext;
-            this.Logger = logger;
-        }
-        public bool Exists(string name)
-        {
-            return this.ItlaContext.Products.Any(st => st.productname == name);
-        }
+        private readonly ItlaContext context;
+        private readonly ILogger<ProductRepository> ilogger;
 
-        public List<Product> GetAl1()
+        public ProductRepository(ItlaContext context,
+                                    ILogger<ProductRepository> ilogger) : base(context)
         {
-            return this.ItlaContext.Products
-                        .Where(dep => !dep.Deleted).ToList();
+            this.context = context;
+            this.ilogger = ilogger;
+        }
+        public override List<Product> GetEntities()
+        {
+            return this.context.Products
+                               .Where(de => !de.Deleted)
+                               .OrderByDescending(cd => cd.CreationDate).ToList();
         }
 
-        public Product GetById(int id)
-        {
-            return this.ItlaContext.Products.Find();
-        }
-
-        public void Remove(Product product)
-        {
-            try
-            {
-                Product productToRemove = this.GetById(product.ProductId);
-
-                productToRemove.Deleted = true;
-                productToRemove.DeletedDate = DateTime.Now;
-                productToRemove.UserDeleted = product.UserDeleted;
-
-                this.ItlaContext.Products.Update(productToRemove);
-                this.ItlaContext.SaveChanges();
-            }
-            catch (Exception ex)
-            {
-                this.Logger.logError($"Error removiendo el Producto", ex.ToString());
-            }
-        }
-
-        public void Remove(object product)
-        {
-            throw new NotImplementedException();
-        }
-
-        public void Save(Product product)
-        {
-            try
-            {
-                Product productToAdd = new Product()
-                {
-                    productname = product.productname,
-                    categoryname = product.categoryname,
-                    CreationDate = product.CreationDate,
-                    CreationUser = product.CreationUser,
-                    Description = product.Description,
-                };
-                this.ItlaContext.Products.Add(productToAdd);
-                this.ItlaContext.SaveChanges();
-            }
-            catch (Exception ex)
-            {
-                this.Logger.logError($"Error agregando el Producto", ex.ToString());
-                throw;
-            }
-        }
-
-        public void Update(Product product)
-        {
-            try
-            {
-                Product productToUpdate = this.GetById(product.ProductId);
-                productToUpdate.productname = product.productname;
-                productToUpdate.categoryname = product.categoryname;
-                productToUpdate.CreationDate = DateTime.Now;
-                productToUpdate.CreationUser = product.CreationUser;
-                productToUpdate.Description = product.Description;
-
-                this.ItlaContext.SaveChanges();
-            }
-            catch (Exception ex)
-            {
-                this.Logger.logError($"Error actualizando el producto", ex.ToString());
-            }
-
-        }
     }
 }

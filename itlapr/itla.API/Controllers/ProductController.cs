@@ -24,13 +24,13 @@ namespace ItlaApp.Api.Controllers
         [HttpGet()]
         public IEnumerable<Product> Get()
         {
-            return this.productRepository.GetAl1();
+            return this.productRepository.GetEntities();
         }
 
         [HttpGet("{id}")]
         public IActionResult Get(int id)
         {
-            var product = this.productRepository.GetById(id);
+            var product = this.productRepository.GetEntity(id);
             return Ok(product);
         }
 

@@ -1,6 +1,7 @@
 ﻿using itlapr.DAL.Context;
 using itlapr.DAL.Interfaces;
 using itlapr.DAL.Repositories;
+using itlathApp.DAL.Repositories;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
