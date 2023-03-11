@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "njw3+nB5G5CNhDOOfPRLAtPrXeRXbjtPaAlc2AxgYkLfKyutpJdMI0GXBw1JTVpIGVQETphR0p1uV3aNuAnqfg==",
+  "dgSpecHash": "n8uq1jcK1OO1CmcykII8gEQn54mKWU4aBTyxYlzRfThsk39n+AQZfrUjAY4csUNDeVm/V1QEelnfbofW2avgAw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\technology\\Documents\\francis tarea\\itlapr\\itlapr.DAL\\itlapr.DAL.csproj",
+  "projectFilePath": "C:\\Users\\technology\\Documents\\francis 22\\itlapr\\itlapr.DAL\\itlapr.DAL.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\technology\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\technology\\.nuget\\packages\\microsoft.bcl.hashcode\\1.1.1\\microsoft.bcl.hashcode.1.1.1.nupkg.sha512",

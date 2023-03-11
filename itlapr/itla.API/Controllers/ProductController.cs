@@ -4,7 +4,9 @@ using itlapr.DAL.Core;
 using itlapr.DAL.Entities;
 using itlapr.DAL.Interfaces;
 using Microsoft.AspNetCore.Mvc;
+    
 
+// For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
 namespace ItlaApp.Api.Controllers
 {
@@ -40,7 +42,7 @@ namespace ItlaApp.Api.Controllers
             {
                 string ProductName = productAdd.ProductName,
                        Description = productAdd.Description;
-                int CreateUser = productAdd.CreateUser;
+                int    CreateUser = productAdd.CreateUser;
                 DateTime CreateDate = productAdd.CreateDate;
 
 
@@ -55,7 +57,7 @@ namespace ItlaApp.Api.Controllers
             Product product = new Product();
             {
                 int ProductId = productUpdate.ProductId;
-                string ProductName = productUpdate.ProductName,
+                string ProductName = productUpdate.ProductName, 
                        Category = productUpdate.Category;
 
             }
@@ -63,7 +65,7 @@ namespace ItlaApp.Api.Controllers
         }
 
         [HttpPost("Remove")]
-        public void Remove([FromBody] ProductRemoveRequest productRemove)
+        public void Remove([FromBody]ProductRemoveRequest productRemove)
         {
             Product product = new Product();
             {

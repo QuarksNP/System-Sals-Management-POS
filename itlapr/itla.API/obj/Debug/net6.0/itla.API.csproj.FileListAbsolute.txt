@@ -62,3 +62,13 @@ C:\Users\technology\Documents\francis tarea\itlapr\itla.API\obj\Debug\net6.0\ref
 C:\Users\technology\Documents\francis tarea\itlapr\itla.API\obj\Debug\net6.0\itla.API.pdb
 C:\Users\technology\Documents\francis tarea\itlapr\itla.API\obj\Debug\net6.0\itla.API.genruntimeconfig.cache
 C:\Users\technology\Documents\francis tarea\itlapr\itla.API\obj\Debug\net6.0\ref\itla.API.dll
+C:\Users\technology\Documents\francis 22\itlapr\itla.API\obj\Debug\net6.0\itla.API.csproj.AssemblyReference.cache
+C:\Users\technology\Documents\francis 22\itlapr\itla.API\obj\Debug\net6.0\itla.API.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\technology\Documents\francis 22\itlapr\itla.API\obj\Debug\net6.0\itla.API.AssemblyInfoInputs.cache
+C:\Users\technology\Documents\francis 22\itlapr\itla.API\obj\Debug\net6.0\itla.API.AssemblyInfo.cs
+C:\Users\technology\Documents\francis 22\itlapr\itla.API\obj\Debug\net6.0\itla.API.csproj.CoreCompileInputs.cache
+C:\Users\technology\Documents\francis 22\itlapr\itla.API\obj\Debug\net6.0\itla.API.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\technology\Documents\francis 22\itlapr\itla.API\obj\Debug\net6.0\itla.API.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\technology\Documents\francis 22\itlapr\itla.API\obj\Debug\net6.0\itla.API.dll
+C:\Users\technology\Documents\francis 22\itlapr\itla.API\obj\Debug\net6.0\refint\itla.API.dll
+C:\Users\technology\Documents\francis 22\itlapr\itla.API\obj\Debug\net6.0\itla.API.pdb

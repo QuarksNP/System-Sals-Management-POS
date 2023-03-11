@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\technology\\Documents\\francis tarea\\itlapr\\itlapr.DAL\\itlapr.DAL.csproj": {}
+    "C:\\Users\\technology\\Documents\\francis 22\\itlapr\\itlapr.DAL\\itlapr.DAL.csproj": {}
   },
   "projects": {
-    "C:\\Users\\technology\\Documents\\francis tarea\\itlapr\\itlapr.DAL\\itlapr.DAL.csproj": {
+    "C:\\Users\\technology\\Documents\\francis 22\\itlapr\\itlapr.DAL\\itlapr.DAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\technology\\Documents\\francis tarea\\itlapr\\itlapr.DAL\\itlapr.DAL.csproj",
+        "projectUniqueName": "C:\\Users\\technology\\Documents\\francis 22\\itlapr\\itlapr.DAL\\itlapr.DAL.csproj",
         "projectName": "itlapr.DAL",
-        "projectPath": "C:\\Users\\technology\\Documents\\francis tarea\\itlapr\\itlapr.DAL\\itlapr.DAL.csproj",
+        "projectPath": "C:\\Users\\technology\\Documents\\francis 22\\itlapr\\itlapr.DAL\\itlapr.DAL.csproj",
         "packagesPath": "C:\\Users\\technology\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\technology\\Documents\\francis tarea\\itlapr\\itlapr.DAL\\obj\\",
+        "outputPath": "C:\\Users\\technology\\Documents\\francis 22\\itlapr\\itlapr.DAL\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

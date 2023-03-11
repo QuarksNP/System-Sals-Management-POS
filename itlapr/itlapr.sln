@@ -23,46 +23,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TEST", "TEST", "{D2EF7F59-4
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "itlapr.Test", "itlapr.Test\itlapr.Test.csproj", "{5A248420-5008-4ECA-B4FF-1D1DB295621F}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ItlaApp.Api", "ItlaApp.Api", "{A16BB8DA-AD1D-4181-9108-F9F0A647156B}"
-	ProjectSection(SolutionItems) = preProject
-		..\..\..\Downloads\System-Sals-Management-POS-Misael-Naranjo\System-Sals-Management-POS-Misael-Naranjo\itlapr\ItlaApp.Api\appsettings.Development.json = ..\..\..\Downloads\System-Sals-Management-POS-Misael-Naranjo\System-Sals-Management-POS-Misael-Naranjo\itlapr\ItlaApp.Api\appsettings.Development.json
-		..\..\..\Downloads\System-Sals-Management-POS-Misael-Naranjo\System-Sals-Management-POS-Misael-Naranjo\itlapr\ItlaApp.Api\appsettings.json = ..\..\..\Downloads\System-Sals-Management-POS-Misael-Naranjo\System-Sals-Management-POS-Misael-Naranjo\itlapr\ItlaApp.Api\appsettings.json
-		..\..\..\Downloads\System-Sals-Management-POS-Misael-Naranjo\System-Sals-Management-POS-Misael-Naranjo\itlapr\ItlaApp.Api\ItlaApp.Api.csproj = ..\..\..\Downloads\System-Sals-Management-POS-Misael-Naranjo\System-Sals-Management-POS-Misael-Naranjo\itlapr\ItlaApp.Api\ItlaApp.Api.csproj
-		..\..\..\Downloads\System-Sals-Management-POS-Misael-Naranjo\System-Sals-Management-POS-Misael-Naranjo\itlapr\ItlaApp.Api\Program.cs = ..\..\..\Downloads\System-Sals-Management-POS-Misael-Naranjo\System-Sals-Management-POS-Misael-Naranjo\itlapr\ItlaApp.Api\Program.cs
-		..\..\..\Downloads\System-Sals-Management-POS-Misael-Naranjo\System-Sals-Management-POS-Misael-Naranjo\itlapr\ItlaApp.Api\WeatherForecast.cs = ..\..\..\Downloads\System-Sals-Management-POS-Misael-Naranjo\System-Sals-Management-POS-Misael-Naranjo\itlapr\ItlaApp.Api\WeatherForecast.cs
-	EndProjectSection
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "controllers", "controllers", "{D4685D17-6D40-4096-A14B-BB3C146F9158}"
-	ProjectSection(SolutionItems) = preProject
-		..\..\..\Downloads\System-Sals-Management-POS-Misael-Naranjo\System-Sals-Management-POS-Misael-Naranjo\itlapr\ItlaApp.Api\Controllers\WeatherForecastController.cs = ..\..\..\Downloads\System-Sals-Management-POS-Misael-Naranjo\System-Sals-Management-POS-Misael-Naranjo\itlapr\ItlaApp.Api\Controllers\WeatherForecastController.cs
-	EndProjectSection
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "object", "object", "{06B5B8E6-734A-4C9E-9C0C-531E6EF0A0E1}"
-	ProjectSection(SolutionItems) = preProject
-		..\..\..\Downloads\System-Sals-Management-POS-Misael-Naranjo\System-Sals-Management-POS-Misael-Naranjo\itlapr\ItlaApp.Api\obj\ItlaApp.Api.csproj.nuget.dgspec.json = ..\..\..\Downloads\System-Sals-Management-POS-Misael-Naranjo\System-Sals-Management-POS-Misael-Naranjo\itlapr\ItlaApp.Api\obj\ItlaApp.Api.csproj.nuget.dgspec.json
-		..\..\..\Downloads\System-Sals-Management-POS-Misael-Naranjo\System-Sals-Management-POS-Misael-Naranjo\itlapr\ItlaApp.Api\obj\ItlaApp.Api.csproj.nuget.g.props = ..\..\..\Downloads\System-Sals-Management-POS-Misael-Naranjo\System-Sals-Management-POS-Misael-Naranjo\itlapr\ItlaApp.Api\obj\ItlaApp.Api.csproj.nuget.g.props
-		..\..\..\Downloads\System-Sals-Management-POS-Misael-Naranjo\System-Sals-Management-POS-Misael-Naranjo\itlapr\ItlaApp.Api\obj\ItlaApp.Api.csproj.nuget.g.targets = ..\..\..\Downloads\System-Sals-Management-POS-Misael-Naranjo\System-Sals-Management-POS-Misael-Naranjo\itlapr\ItlaApp.Api\obj\ItlaApp.Api.csproj.nuget.g.targets
-		..\..\..\Downloads\System-Sals-Management-POS-Misael-Naranjo\System-Sals-Management-POS-Misael-Naranjo\itlapr\ItlaApp.Api\obj\project.assets.json = ..\..\..\Downloads\System-Sals-Management-POS-Misael-Naranjo\System-Sals-Management-POS-Misael-Naranjo\itlapr\ItlaApp.Api\obj\project.assets.json
-		..\..\..\Downloads\System-Sals-Management-POS-Misael-Naranjo\System-Sals-Management-POS-Misael-Naranjo\itlapr\ItlaApp.Api\obj\project.nuget.cache = ..\..\..\Downloads\System-Sals-Management-POS-Misael-Naranjo\System-Sals-Management-POS-Misael-Naranjo\itlapr\ItlaApp.Api\obj\project.nuget.cache
-	EndProjectSection
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "properties", "properties", "{0AEA2EF0-C846-424F-94AC-6C639F872EB7}"
-	ProjectSection(SolutionItems) = preProject
-		..\..\..\Downloads\System-Sals-Management-POS-Misael-Naranjo\System-Sals-Management-POS-Misael-Naranjo\itlapr\ItlaApp.Api\Properties\launchSettings.json = ..\..\..\Downloads\System-Sals-Management-POS-Misael-Naranjo\System-Sals-Management-POS-Misael-Naranjo\itlapr\ItlaApp.Api\Properties\launchSettings.json
-	EndProjectSection
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "debug", "debug", "{50651380-E7B6-4DF9-9B7D-757B38CF4EE7}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "net6.0", "net6.0", "{AF9FFF01-28A6-45C2-9050-263CCECF407B}"
-	ProjectSection(SolutionItems) = preProject
-		..\..\..\Downloads\System-Sals-Management-POS-Misael-Naranjo\System-Sals-Management-POS-Misael-Naranjo\itlapr\ItlaApp.Api\obj\Debug\net6.0\ItlaApp.Api.AssemblyInfo.cs = ..\..\..\Downloads\System-Sals-Management-POS-Misael-Naranjo\System-Sals-Management-POS-Misael-Naranjo\itlapr\ItlaApp.Api\obj\Debug\net6.0\ItlaApp.Api.AssemblyInfo.cs
-		..\..\..\Downloads\System-Sals-Management-POS-Misael-Naranjo\System-Sals-Management-POS-Misael-Naranjo\itlapr\ItlaApp.Api\obj\Debug\net6.0\ItlaApp.Api.AssemblyInfoInputs.cache = ..\..\..\Downloads\System-Sals-Management-POS-Misael-Naranjo\System-Sals-Management-POS-Misael-Naranjo\itlapr\ItlaApp.Api\obj\Debug\net6.0\ItlaApp.Api.AssemblyInfoInputs.cache
-		..\..\..\Downloads\System-Sals-Management-POS-Misael-Naranjo\System-Sals-Management-POS-Misael-Naranjo\itlapr\ItlaApp.Api\obj\Debug\net6.0\ItlaApp.Api.assets.cache = ..\..\..\Downloads\System-Sals-Management-POS-Misael-Naranjo\System-Sals-Management-POS-Misael-Naranjo\itlapr\ItlaApp.Api\obj\Debug\net6.0\ItlaApp.Api.assets.cache
-		..\..\..\Downloads\System-Sals-Management-POS-Misael-Naranjo\System-Sals-Management-POS-Misael-Naranjo\itlapr\ItlaApp.Api\obj\Debug\net6.0\ItlaApp.Api.csproj.AssemblyReference.cache = ..\..\..\Downloads\System-Sals-Management-POS-Misael-Naranjo\System-Sals-Management-POS-Misael-Naranjo\itlapr\ItlaApp.Api\obj\Debug\net6.0\ItlaApp.Api.csproj.AssemblyReference.cache
-		..\..\..\Downloads\System-Sals-Management-POS-Misael-Naranjo\System-Sals-Management-POS-Misael-Naranjo\itlapr\ItlaApp.Api\obj\Debug\net6.0\ItlaApp.Api.GeneratedMSBuildEditorConfig.editorconfig = ..\..\..\Downloads\System-Sals-Management-POS-Misael-Naranjo\System-Sals-Management-POS-Misael-Naranjo\itlapr\ItlaApp.Api\obj\Debug\net6.0\ItlaApp.Api.GeneratedMSBuildEditorConfig.editorconfig
-		..\..\..\Downloads\System-Sals-Management-POS-Misael-Naranjo\System-Sals-Management-POS-Misael-Naranjo\itlapr\ItlaApp.Api\obj\Debug\net6.0\ItlaApp.Api.GlobalUsings.g.cs = ..\..\..\Downloads\System-Sals-Management-POS-Misael-Naranjo\System-Sals-Management-POS-Misael-Naranjo\itlapr\ItlaApp.Api\obj\Debug\net6.0\ItlaApp.Api.GlobalUsings.g.cs
-	EndProjectSection
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -99,11 +59,6 @@ Global
 		{FF525806-27C1-4F1E-A98B-020417E2C036} = {B06C12A4-EFC0-4B99-83DA-ADA6B65B80F6}
 		{8E9E2188-655B-4918-AF34-7A211B5E36FE} = {34758DF8-008F-45DE-9996-A2AEF38324F4}
 		{5A248420-5008-4ECA-B4FF-1D1DB295621F} = {D2EF7F59-4114-4D73-92C5-66659D5191E8}
-		{D4685D17-6D40-4096-A14B-BB3C146F9158} = {A16BB8DA-AD1D-4181-9108-F9F0A647156B}
-		{06B5B8E6-734A-4C9E-9C0C-531E6EF0A0E1} = {A16BB8DA-AD1D-4181-9108-F9F0A647156B}
-		{0AEA2EF0-C846-424F-94AC-6C639F872EB7} = {A16BB8DA-AD1D-4181-9108-F9F0A647156B}
-		{50651380-E7B6-4DF9-9B7D-757B38CF4EE7} = {06B5B8E6-734A-4C9E-9C0C-531E6EF0A0E1}
-		{AF9FFF01-28A6-45C2-9050-263CCECF407B} = {50651380-E7B6-4DF9-9B7D-757B38CF4EE7}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {E4D24813-7351-45C6-A92C-F0B37C4029CF}
