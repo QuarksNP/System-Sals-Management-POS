@@ -1,5 +1,4 @@
 ﻿
-using itlapr.DAL.Entities;
 using itlapr.DAL.Entity;
 using Microsoft.EntityFrameworkCore;
 
@@ -19,7 +18,6 @@ namespace itlapr.DAL.Context
 
         #region "Registros"
         public DbSet<Employees> Employee { get; set; }
-        public DbSet<Department> Departments { get; set; }
         #endregion
     }
 }
