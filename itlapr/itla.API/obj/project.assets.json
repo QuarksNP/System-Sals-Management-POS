@@ -1779,6 +1779,19 @@
           "lib/netstandard1.3/System.Xml.XmlSerializer.dll": {}
         }
       },
+      "itlapr.BLL/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "itlapr.DAL": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/itlapr.BLL.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/itlapr.BLL.dll": {}
+        }
+      },
       "itlapr.DAL/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
@@ -6094,6 +6107,11 @@
         "system.xml.xmlserializer.nuspec"
       ]
     },
+    "itlapr.BLL/1.0.0": {
+      "type": "project",
+      "path": "../itlapr.BLL/itlapr.BLL.csproj",
+      "msbuildProject": "../itlapr.BLL/itlapr.BLL.csproj"
+    },
     "itlapr.DAL/1.0.0": {
       "type": "project",
       "path": "../itlapr.DAL/itlapr.DAL.csproj",
@@ -6102,7 +6120,9 @@
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "Microsoft.EntityFrameworkCore >= 3.1.32",
       "Swashbuckle.AspNetCore >= 6.2.3",
+      "itlapr.BLL >= 1.0.0",
       "itlapr.DAL >= 1.0.0"
     ]
   },
@@ -6139,6 +6159,9 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
+            "C:\\Projects\\System-Sals-Management-POS\\itlapr\\itlapr.BLL\\itlapr.BLL.csproj": {
+              "projectPath": "C:\\Projects\\System-Sals-Management-POS\\itlapr\\itlapr.BLL\\itlapr.BLL.csproj"
+            },
             "C:\\Projects\\System-Sals-Management-POS\\itlapr\\itlapr.DAL\\itlapr.DAL.csproj": {
               "projectPath": "C:\\Projects\\System-Sals-Management-POS\\itlapr\\itlapr.DAL\\itlapr.DAL.csproj"
             }
@@ -6155,6 +6178,10 @@
       "net6.0": {
         "targetAlias": "net6.0",
         "dependencies": {
+          "Microsoft.EntityFrameworkCore": {
+            "target": "Package",
+            "version": "[3.1.32, )"
+          },
           "Swashbuckle.AspNetCore": {
             "target": "Package",
             "version": "[6.2.3, )"

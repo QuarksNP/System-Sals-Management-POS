@@ -35,6 +35,8 @@ namespace itlapr.API
 
             //Repositories
             services.AddTransient<IEmployeeRepository, EmployeesRepository>();
+            
+            
             //App Services
 
             services.AddControllers();

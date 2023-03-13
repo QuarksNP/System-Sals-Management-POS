@@ -1,8 +1,8 @@
 ﻿namespace itlapr.DAL.Core
 {
-    public class AuditEntity
+    public class BaseEntity
     {
-        public AuditEntity()
+        public BaseEntity()
         {
             this.CreationDate = DateTime.Now;
             this.Deleted = false;

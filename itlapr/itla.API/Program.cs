@@ -1,6 +1,22 @@
+using itlapr.BLL.Contract;
+using itlapr.BLL.Services;
+using itlapr.DAL.Context;
+using itlapr.DAL.Interfaces;
+using itlapr.DAL.Repositories;
+using Microsoft.EntityFrameworkCore;
+
 var builder = WebApplication.CreateBuilder(args);
 
+
 // Add services to the container.
+builder.Services.AddDbContext<ItlaContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("ItlaContext")));
+
+//Repositories
+builder.Services.AddTransient<IEmployeeRepository, EmployeesRepository>();
+
+// Services //
+builder.Services.AddTransient<IEmployeesService, EmployeesService>();
+
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle

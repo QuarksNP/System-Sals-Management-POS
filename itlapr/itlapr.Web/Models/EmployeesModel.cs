@@ -2,7 +2,7 @@
 {
     public class EmployeesModel
     {
-        public int employerId { get; set; }
+        public int empid { get; set; }
         public string? firstName { get; set; }
         public string? lastName { get; set; }
         public string? position { get; set; }

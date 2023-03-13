@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\tlapr.webapi.props" />
+</Project>

@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "LxihFiMesHL+GE6CCxUOzegWCSV6WNBT4S49Ffl6s1M=",
+  "Source": "tlapr.webapi",
+  "BasePath": "_content/tlapr.webapi",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

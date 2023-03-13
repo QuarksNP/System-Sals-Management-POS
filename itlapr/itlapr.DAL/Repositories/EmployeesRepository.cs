@@ -1,101 +1,50 @@
 ﻿using itlapr.DAL.Entity;
 using itlapr.DAL.Context;
 using Microsoft.Extensions.Logging;
-
-
+using itlapr.DAL.Interfaces;
+using itlapr.DAL.Core;
 namespace itlapr.DAL.Repositories
 {
-    public class EmployeesRepository : Interfaces.IEmployeeRepository
+    public class EmployeesRepository :RepositoryBase<Employees>, IEmployeeRepository
     {
         private readonly ItlaContext itlaContext;
         private readonly ILogger<EmployeesRepository> logger;
 
-        public EmployeesRepository(ItlaContext itlaContext, ILogger<EmployeesRepository> logger) 
+        public EmployeesRepository(ItlaContext itlaContext, ILogger<EmployeesRepository> logger) : base(itlaContext)
         {
             this.itlaContext = itlaContext;
             this.logger = logger;
         }
-        public bool Exists(string name)
+
+        public override void Save(Employees entity)
         {
-            return this.itlaContext.Employee.Any(st => st.FirstName == name);
+          base.Save(entity);
+          base.SaveChanges();
         }
 
-        public List<Employees> GetAll()
+        public override void Update(Employees entity)
+        {
+            base.Update(entity);
+            base.SaveChanges();
+        }
+
+        public override void Remove(Employees entity)
+        {
+            base.Remove(entity);
+            base.SaveChanges();
+
+        }
+
+        public override List<Employees> GetEntities()
         {
             return this.itlaContext.Employee.ToList();
         }
 
-        public Employees GetById(int employeeId)
+        public override Employees GetEntity(int id)
         {
-            return this.itlaContext.Employee.Find();
+            return this.itlaContext.Employee.FirstOrDefault(em => em.empId == id);
         }
 
-        public void Remove(Employees employee)
-        {
-            try
-            {
-                Employees employeeToRemove = this.GetById(employee.Id);
-                
-                employeeToRemove.Deleted= true;
-                employeeToRemove.DeleteDate = DateTime.Now;
-                employeeToRemove.UserDeleted = employee.UserDeleted;
 
-                this.itlaContext.Employee.Update(employeeToRemove);
-                this.itlaContext.SaveChanges();
-            }
-
-            catch(Exception ex)
-            {
-                this.logger.LogError($"Error deleting the employee", ex.ToString());
-            }
-        }
-
-        public void Save(Employees employee)
-        {
-            try
-            {
-                Employees employeeToAdd = new Employees()
-                {
-                    FirstName = employee.FirstName,
-                    LastName = employee.LastName,
-                    CreationDate = DateTime.Now,
-                    CreationUser = employee.CreationUser,
-                    HireDate = employee.HireDate
-
-                };
-
-                this.itlaContext.Employee.Add(employeeToAdd);
-                this.itlaContext.SaveChanges();
-                
-            }
-
-            catch(Exception ex)
-            {
-
-            }
-        }
-
-        public void Update(Employees employee)
-        {
-            try
-            {
-                Employees employeeToUpdate = this.GetById(employee.Id);
-                
-                employeeToUpdate.FirstName = employee.FirstName;
-                employeeToUpdate.LastName = employee.LastName;
-                employeeToUpdate.ModifyDate = DateTime.Now;
-                employeeToUpdate.UserMod = employee.UserMod;
-                employeeToUpdate.HireDate= employee.HireDate;
-
-                this.itlaContext.SaveChanges();
-
-
-            }
-
-            catch (Exception ex)
-            {
-
-            }
-        }
     }
 }
