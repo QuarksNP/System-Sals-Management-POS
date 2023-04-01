@@ -1,39 +1,80 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using itlapr.Web.Models.Request;
+using itlapr.Web.Models.Response;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Newtonsoft.Json;
+using System.Text;
 
 namespace itlapr.Web.Controllers
 {
     public class EmployeesController : Controller
     {
-        // GET: EmployeesController
-        public ActionResult Index()
+        HttpClientHandler httpClientHandler = new HttpClientHandler();
+        private ILogger<EmployeesController> logger;
+        private IConfiguration configuration;
+
+        public EmployeesController(ILogger<EmployeesController> logger, IConfiguration configuration)
         {
-            List<Models.EmployeesModel> employess = new List<Models.EmployeesModel>()
+            this.logger = logger;
+            this.configuration = configuration;
+        }
+        // GET: EmployeesController
+        public async Task <ActionResult> Index()
+        {
+            EmployeesListResponse employeesListResponse = new EmployeesListResponse();
+
+            try
             {
-
-                new Models.EmployeesModel()
+                using (var httpClient = new HttpClient(this.httpClientHandler))
                 {
-                    empid=20212138, firstName = "Alberto", lastName = "Guzman", birthDate= DateTime.Now.ToString("27-11-2003"), city= "Santo Domingo", country="Domican Republic", hireDate= DateTime.Now.ToString("02-10-2023"), phone= "849-367-7774", position= "Supervisor", postalCode= 10100, region= "Sureste"
-                },
+                   var resultApi =  await httpClient.GetAsync("http://localhost:5144/api/Employess");
 
-                 new Models.EmployeesModel()
-                {
-                    empid=20220397, firstName = "Roberto", lastName = "Isaac", birthDate= DateTime.Now.ToString("15-01-2003"), city= "Santiago", country="Domican Republic", hireDate= DateTime.Now.ToString("23-05-2023"), phone= "829-234-2424", position= "Manager", postalCode= 51000, region= "Cibao"
-                },
+                    if(resultApi.IsSuccessStatusCode)
+                    {
+                        string apiResponse = await resultApi.Content.ReadAsStringAsync();
+                        employeesListResponse = JsonConvert.DeserializeObject<EmployeesListResponse>(apiResponse);
+                    }
 
-                 new Models.EmployeesModel()
-                {
-                    empid=20220113, firstName = "Misael", lastName = "Naranjo", birthDate= DateTime.Now.ToString("03-07-2003"), city= "Monte Cristi", country="Domican Republic", hireDate= DateTime.Now.ToString("16-07-2023"), phone= "849-887-8662", position= "Asistent", postalCode= 10100, region= "Noreste"
+                    else
+                    {
+                        
+                    }
                 }
-            };
 
-            return View(employess);
+                return View(employeesListResponse.data);
+
+
+            }
+
+            catch (Exception ex)
+            {
+                this.logger.LogError("Error getting employee", ex.ToString());
+            }
+            return View();
         }
 
         // GET: EmployeesController/Details/5
-        public ActionResult Details(int id)
+        public async Task<ActionResult> Details(int id)
         {
-            return View();
+            EmployeeResponse employeeResponse = new EmployeeResponse();
+
+            using (var httpClient = new HttpClient(this.httpClientHandler))
+            {
+                var resultApi = await httpClient.GetAsync("http://localhost:5144/api/Employess/" + id);
+
+                if (resultApi.IsSuccessStatusCode)
+                {
+                    string apiResponse = await resultApi.Content.ReadAsStringAsync();
+                    employeeResponse = JsonConvert.DeserializeObject<EmployeeResponse>(apiResponse);
+                }
+
+                else
+                {
+
+                }
+
+            }
+            return View(employeeResponse.data); 
         }
 
         // GET: EmployeesController/Create
@@ -45,11 +86,35 @@ namespace itlapr.Web.Controllers
         // POST: EmployeesController/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create(IFormCollection collection)
+        public async Task<ActionResult> Create(EmployeeCreateRequest employeeCreateRequest)
         {
+            BaseResponse baseResponse = new BaseResponse();
             try
             {
-                return RedirectToAction(nameof(Index));
+                employeeCreateRequest.hireDate = DateTime.Now;
+                using (var httpClient = new HttpClient(this.httpClientHandler))
+                {
+                    StringContent content = new StringContent(JsonConvert.SerializeObject(employeeCreateRequest), Encoding.UTF8, "application/json");
+
+                    var response = await httpClient.PostAsync("http://localhost:5144/api/Employess/Save", content);
+
+                    string apiResponse = await response.Content.ReadAsStringAsync();
+
+                    baseResponse = JsonConvert.DeserializeObject<BaseResponse>(apiResponse);
+
+                    if (response.IsSuccessStatusCode)
+                    {
+                        return RedirectToAction(nameof(Index));
+                    }
+                    else
+                    {
+                        ViewBag.Message = baseResponse.Message;
+                        return View();
+                    }
+
+                }
+
+
             }
             catch
             {
@@ -58,19 +123,60 @@ namespace itlapr.Web.Controllers
         }
 
         // GET: EmployeesController/Edit/5
-        public ActionResult Edit(int id)
+        public async Task<ActionResult> Edit(int id)
         {
-            return View();
+            EmployeeResponse employeeResponse = new EmployeeResponse();
+
+            using (var httpClient = new HttpClient(this.httpClientHandler))
+                {
+                    var resultApi = await httpClient.GetAsync("http://localhost:5144/api/Employess/" + id);
+
+                    if (resultApi.IsSuccessStatusCode)
+                    {
+                        string apiResponse = await resultApi.Content.ReadAsStringAsync();
+                        employeeResponse = JsonConvert.DeserializeObject<EmployeeResponse>(apiResponse);
+                    }
+
+                    else
+                    {
+
+                    }
+
+            }       return View(employeeResponse.data);
         }
 
         // POST: EmployeesController/Edit/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit(int id, IFormCollection collection)
+        public async Task <ActionResult> Edit(EmployeeUpdateRequest employeeUpdateRequest)
         {
+            BaseResponse baseResponse = new BaseResponse();
             try
             {
-                return RedirectToAction(nameof(Index));
+             
+                using (var httpClient = new HttpClient(this.httpClientHandler))
+                {
+                    StringContent content = new StringContent(JsonConvert.SerializeObject(employeeUpdateRequest), Encoding.UTF8, "application/json");
+
+                    var response = await httpClient.PostAsync("http://localhost:5144/api/Employess/Update", content);
+
+                    string apiResponse = await response.Content.ReadAsStringAsync();
+
+                    baseResponse = JsonConvert.DeserializeObject<BaseResponse>(apiResponse);
+
+                    if (response.IsSuccessStatusCode)
+                    {
+                        return RedirectToAction(nameof(Index));
+                    }
+                    else
+                    {
+                        ViewBag.Message = baseResponse.Message;
+                        return View();
+                    }
+
+                }
+
+
             }
             catch
             {

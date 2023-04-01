@@ -37,7 +37,7 @@ namespace itlapr.DAL.Entity
         public string? region { get; set; }
 
         [Column("postalcode")]
-        public int postalCode { get; set; }
+        public string postalCode { get; set; }
 
         [Column("phone")]
         public string? phone { get; set; }

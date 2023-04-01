@@ -73,6 +73,8 @@ namespace itlapr.BLL.Services
                     firstName = emp.firstName,
                     lastName = emp.lastName
 
+                    
+
                 }).ToList();
 
                 serviceResult.Data= employees;
@@ -102,10 +104,18 @@ namespace itlapr.BLL.Services
 
                 EmployeesModel employeesModel = new EmployeesModel()
                 {
-                    empId = employees.empId,
                     HireDate = employees.HireDate,
                     firstName = employees.firstName,
-                    lastName = employees.lastName
+                    lastName = employees.lastName,
+                    title = employees.title,
+                    titleOfCourtesy = employees.titleOfCourtesy,
+                    mGrid = employees.mGrid,
+                    city = employees.city,
+                    country = employees.country,
+                    region = employees.region,
+                    postalCode = employees.postalCode,
+                    phone = employees.phone,
+                    address = employees.address
                 };
 
                 serviceResult.Data = employeesModel;

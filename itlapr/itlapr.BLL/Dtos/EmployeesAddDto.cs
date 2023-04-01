@@ -8,7 +8,6 @@ namespace itlapr.BLL.Dtos
 {
     public class EmployeesAddDto
     {
-        public int empId { get; set; }
         public string? FirstName { get; set; }
         public string? LastName { get; set; }
         public DateTime HireDate { get; set; }
@@ -19,7 +18,7 @@ namespace itlapr.BLL.Dtos
         public string? city { get; set; }
         public string? country { get; set; }
         public string? region { get; set; }
-        public int postalCode { get; set; }
+        public string postalCode { get; set; }
         public string? phone { get; set; }
 
     }
