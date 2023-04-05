@@ -177,7 +177,7 @@ namespace itlapr.BLL.Services
      
             catch (Exception ex)
             {
-                serviceResult.Message = "Ocurrió un error agregando el estudiante";
+                serviceResult.Message = "Ocurrió un error agregando el empleado";
                 serviceResult.Success = false;
                 this.logger.LogError($" {serviceResult.Message} ", ex.ToString());
             }

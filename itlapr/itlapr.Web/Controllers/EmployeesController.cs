@@ -1,4 +1,5 @@
-﻿using itlapr.Web.Models.Request;
+﻿using itlapr.Web.ApiServices.Interfaces;
+using itlapr.Web.Models.Request;
 using itlapr.Web.Models.Response;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -10,47 +11,31 @@ namespace itlapr.Web.Controllers
     public class EmployeesController : Controller
     {
         HttpClientHandler httpClientHandler = new HttpClientHandler();
-        private ILogger<EmployeesController> logger;
-        private IConfiguration configuration;
+        private readonly IEmployeesApiServices employeesApiServices;
+        private readonly ILogger<EmployeesController> logger;
+        private readonly IConfiguration configuration;
 
-        public EmployeesController(ILogger<EmployeesController> logger, IConfiguration configuration)
+        public EmployeesController(IEmployeesApiServices employeesApiServices,
+                                 ILogger<EmployeesController> logger,
+                                 IConfiguration configuration)
         {
+            this.employeesApiServices = employeesApiServices;
             this.logger = logger;
             this.configuration = configuration;
         }
         // GET: EmployeesController
-        public async Task <ActionResult> Index()
+        public async Task<ActionResult> Index()
         {
             EmployeesListResponse employeesListResponse = new EmployeesListResponse();
 
-            try
+            employeesListResponse = await this.employeesApiServices.GetEmployees();
+
+            if (!employeesListResponse.success)
             {
-                using (var httpClient = new HttpClient(this.httpClientHandler))
-                {
-                   var resultApi =  await httpClient.GetAsync("http://localhost:5144/api/Employess");
-
-                    if(resultApi.IsSuccessStatusCode)
-                    {
-                        string apiResponse = await resultApi.Content.ReadAsStringAsync();
-                        employeesListResponse = JsonConvert.DeserializeObject<EmployeesListResponse>(apiResponse);
-                    }
-
-                    else
-                    {
-                        
-                    }
-                }
-
-                return View(employeesListResponse.data);
-
-
+                return View();
             }
 
-            catch (Exception ex)
-            {
-                this.logger.LogError("Error getting employee", ex.ToString());
-            }
-            return View();
+            return View(employeesListResponse.data);
         }
 
         // GET: EmployeesController/Details/5
@@ -58,23 +43,9 @@ namespace itlapr.Web.Controllers
         {
             EmployeeResponse employeeResponse = new EmployeeResponse();
 
-            using (var httpClient = new HttpClient(this.httpClientHandler))
-            {
-                var resultApi = await httpClient.GetAsync("http://localhost:5144/api/Employess/" + id);
+            employeeResponse = await this.employeesApiServices.GetEmployee(id);
 
-                if (resultApi.IsSuccessStatusCode)
-                {
-                    string apiResponse = await resultApi.Content.ReadAsStringAsync();
-                    employeeResponse = JsonConvert.DeserializeObject<EmployeeResponse>(apiResponse);
-                }
-
-                else
-                {
-
-                }
-
-            }
-            return View(employeeResponse.data); 
+            return View(employeeResponse.data);
         }
 
         // GET: EmployeesController/Create
